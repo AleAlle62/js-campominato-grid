@@ -11,28 +11,27 @@ let tre = document.querySelector('.tre')
 
 uno.addEventListener('click', function () {
 
-    function primoLivello(){
-        // ciclo per tutti i quadrati
-        for (let i = 0; i < 100; i++) {
+    // ciclo per tutti i quadrati
+    for (let i = 0; i < 100; i++) {
             
-            // creazione elemento HTML per le celle 
-            const eleCell = document.createElement('div');
-            
-            // creazione di un elemento nuovo
-            eleCell.classList.add('cell');
-            
-            // mettere un contenuto all'interno di un elemento
-            eleGrid.append(eleCell);
-            
-            // stampa dei numeri 
-            eleCell.innerHTML += `<div class=".grid">${[i]}</div>`
+        // creazione elemento HTML per le celle 
+        const eleCell = document.createElement('div');
         
-            // funzione per cui se cliccli si colora collegato a CSS
-            eleCell.addEventListener('click', function () {
-                this.classList.toggle('active')
-            });
-        }
+        // creazione di un elemento nuovo
+        eleCell.classList.add('cell');
+            
+        // mettere un contenuto all'interno di un elemento
+        eleGrid.append(eleCell);
+            
+        // stampa dei numeri 
+        eleCell.innerHTML += `<div class=".grid">${[i]}</div>`
+        
+        // funzione per cui se cliccli si colora collegato a CSS
+        eleCell.addEventListener('click', function () {
+            this.classList.toggle('active')
+        });
     }
+    
 });
 
 
@@ -43,61 +42,52 @@ uno.addEventListener('click', function () {
 
 due.addEventListener('click', function () {
 
-    function secondoLivello(){
-        // ciclo per tutti i quadrati
-        for (let i = 0; i < 81; i++) {
+    // ciclo per tutti i quadrati
+    for (let i = 0; i < 81; i++) {
             
-            // creazione elemento HTML per le celle 
-            const eleCell = document.createElement('div');
-            
-            // creazione di un elemento nuovo
-            eleCell.classList.add('cell');
-            
-            // mettere un contenuto all'interno di un elemento
-            eleGrid.append(eleCell);
-            
-            // stampa dei numeri 
-            eleCell.innerHTML += `<div class=".grid">${[i]}</div>`
+        // creazione elemento HTML per le celle 
+        const eleCell = document.createElement('div');
         
-            // funzione per cui se cliccli si colora collegato a CSS
-            eleCell.addEventListener('click', function () {
-                this.classList.toggle('active')
-            });
-        }
+        // creazione di un elemento nuovo
+        eleCell.classList.add('cell');
+            
+        // mettere un contenuto all'interno di un elemento
+        eleGrid.append(eleCell);
+            
+        // stampa dei numeri 
+        eleCell.innerHTML += `<div class=".grid">${[i]}</div>`
+        
+        // funzione per cui se cliccli si colora collegato a CSS
+        eleCell.addEventListener('click', function () {
+            this.classList.toggle('active')
+        });
     }
-    
-
 });
-
-
 
 
 //DIFFICOLTA 3
 
-
 tre.addEventListener('click', function () {
 
-    function terzoLivello(){
         // ciclo per tutti i quadrati
-        for (let i = 0; i < 49; i++) {
+    for (let i = 0; i < 49; i++) {
             
-            // creazione elemento HTML per le celle 
-            const eleCell = document.createElement('div');
+        // creazione elemento HTML per le celle 
+        const eleCell = document.createElement('div');
             
-            // creazione di un elemento nuovo
-            eleCell.classList.add('cell');
-            
-            // mettere un contenuto all'interno di un elemento
-            eleGrid.append(eleCell);
-            
-            // stampa dei numeri 
-            eleCell.innerHTML += `<div class=".grid">${[i]}</div>`
+        // creazione di un elemento nuovo
+        eleCell.classList.add('cell');
         
-            // funzione per cui se cliccli si colora collegato a CSS
-            eleCell.addEventListener('click', function () {
-                this.classList.toggle('active')
-            });
-        }
+        // mettere un contenuto all'interno di un elemento
+        eleGrid.append(eleCell);
+            
+        // stampa dei numeri 
+        eleCell.innerHTML += `<div class=".grid">${[i]}</div>`
+        
+        // funzione per cui se cliccli si colora collegato a CSS
+        eleCell.addEventListener('click', function () {
+            this.classList.toggle('active')
+        });
     }
 });
 
