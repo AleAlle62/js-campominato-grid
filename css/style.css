@@ -10,7 +10,6 @@ header {
     height: 20vh;
     display: flex;
     justify-content: space-between;
-    background-color: salmon;
 }
 
 .left {
@@ -31,6 +30,7 @@ header img {
 }
 
 section {
+    padding: 2em;
     background-color: aqua;
     height: 80vh;
 }
@@ -49,6 +49,7 @@ footer {
 }
 
 .cell {
+    padding: 0.9em;
 	border: 2px solid black;
 	height: calc(100% / 10);
 	width: calc(100% / 10);
