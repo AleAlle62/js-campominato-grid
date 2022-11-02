@@ -7,7 +7,7 @@
 
 
 header {
-    height: 20vh;
+    height: 13vh;
     display: flex;
     justify-content: space-between;
 }
@@ -25,8 +25,9 @@ header img {
     height: 80px;
 }
 
-.right input {
-    margin-top: 35px;
+.right #livelli {
+    margin-top: 30px;
+    margin-right: 1px;
 }
 
 section {
@@ -45,12 +46,11 @@ footer {
 	margin: auto;
 	width: 500px;
 	height: 500px;
-	border: 2px solid black;
 }
 
 .cell {
     padding: 0.9em;
-	border: 2px solid black;
+	border: 2px solid fuchsia;
 	height: calc(100% / 10);
 	width: calc(100% / 10);
 }
