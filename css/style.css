@@ -25,10 +25,11 @@ header img {
     height: 80px;
 }
 
-.right #livelli {
+.right {
     margin-top: 30px;
-    margin-right: 1px;
+    margin-right: 10px;
 }
+
 
 section {
     padding: 2em;
@@ -49,7 +50,9 @@ footer {
 }
 
 .cell {
-    padding: 0.9em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 	border: 2px solid fuchsia;
 	height: calc(100% / 10);
 	width: calc(100% / 10);
@@ -58,3 +61,17 @@ footer {
 .cell.active {
 	background-color: salmon;
 }
+
+.btn-play {
+    background-color: salmon;
+    border-radius: 20px;
+    height: 30px;
+    width: 100px;
+    margin: 10px;
+}
+
+.btn-play:hover {
+    transition: 1s;
+    scale: 1.1;
+}
+
